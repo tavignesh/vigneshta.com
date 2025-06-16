@@ -1,0 +1,91 @@
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: all;
+    overflow: hidden;
+    animation: fadeOut 1s ease 3s forwards;
+}
+
+.loader-wrapper {
+  width: 320px; /* increased width for bigger text */
+  height: 5rem; /* a bit taller */
+  font-family: monospace, sans-serif;
+  color: white;
+  user-select: none;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.slash {
+  font-size: 7rem;  /* much bigger slash */
+  line-height: 1;
+  z-index: 2;
+  user-select: none;
+  position: relative;
+  animation: slashMoveRight 0.8s ease forwards 0.4s, slashMoveBack 0.8s ease forwards 2s;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 4rem; /* bigger text */
+  white-space: nowrap;
+  color: white;
+  font-weight: 600;
+  opacity: 0;
+  clip-path: inset(0 100% 0 0);
+  transform: translate(0, -50%);
+  z-index: 1;
+  animation: 
+    nameReveal 0.8s ease forwards 0.4s, 
+    nameHide 0.8s ease forwards 2s;
+}
+
+@keyframes slashMoveRight {
+  to {
+    transform: translateX(215px); /* reduced from 230px */
+  }
+}
+
+@keyframes nameReveal {
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translate(-215px, -50%); /* match slash move */
+  }
+}
+
+
+@keyframes slashMoveBack {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes nameHide {
+  to {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+    transform: translate(0, -50%);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
