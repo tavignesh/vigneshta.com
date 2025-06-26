@@ -639,7 +639,6 @@ a:focus {
     z-index: 1;
 }
 
-
 .experience .timeline {
     position: relative;
     width: 100%;
@@ -898,6 +897,42 @@ a:focus {
 .portfolio {
     position: relative;
     padding: 45px 0 15px 0;
+    background: #1F262A;
+}
+
+.portfolio .section-header h2 {
+    color: #ffffff;
+}
+
+.portfolio .section-header p {
+    position: relative;
+    background: #1F262A;
+    color: #ffffff;
+    z-index: 1;
+    display: inline-block;
+    padding: 5px 15px; /* Add vertical padding */
+}
+
+.portfolio .section-header p::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 50%;
+    left: -30px;
+    background: #ffffff;
+    z-index: 0;
+}
+
+.portfolio .section-header p::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 3px;
+    background: #ffffff;
+    z-index: 1;
 }
 
 .portfolio #portfolio-filter {
@@ -957,14 +992,14 @@ a:focus {
 }
 
 .portfolio .portfolio-item:hover img {
-    margin-left: 15px;
+    margin-left: -15px;
 }
 
 .portfolio .portfolio-text {
     position: relative;
     height: 60px;
-    width: calc(100% - 30px);
-    margin: -30px 15px 30px 15px;
+    width: calc(100%);
+    margin: -30px 0px 30px 0px;
     display: flex;
     align-items: center;
     background: #ffffff;
@@ -1395,11 +1430,6 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     background: #1F262A;
-}
-
-.contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
 }
 
 .contact .contact-form {
