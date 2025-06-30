@@ -1059,6 +1059,137 @@ a:focus {
 
 
 /*******************************/
+/******** Portfolio light CSS ********/
+/*******************************/
+.portfolio-light {
+    position: relative;
+    padding: 45px 0 15px 0;
+}
+
+.portfolio-light .section-header p::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 50%;
+    left: -30px;
+    background: #ffffff;
+    z-index: 0;
+}
+
+.portfolio-light .section-header p::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 3px;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.portfolio-light #portfolio-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.portfolio-light #portfolio-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #1F262A;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px #1F262A;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.portfolio-light #portfolio-filter li:hover,
+.portfolio-light #portfolio-filter li.filter-active {
+    color: #1F262A;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #1F262A;
+    border-color: #1F262A;
+}
+
+.portfolio-light .portfolio-item {
+    position: relative;
+}
+
+.portfolio-light .portfolio-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.portfolio-light .portfolio-img {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #1F262A;
+    border-radius: 10px;
+}
+
+.portfolio-light .portfolio-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.portfolio-light .portfolio-item:hover img {
+    margin-left: -15px;
+}
+
+.portfolio-light .portfolio-text {
+    position: relative;
+    height: 60px;
+    width: calc(100%);
+    margin: -30px 0px 30px 0px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+}
+
+.portfolio-light .portfolio-text h3 {
+    width: calc(100% - 70px);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.portfolio-light .portfolio-text a.btn {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 2px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.portfolio-light .portfolio-item:hover a.btn {
+    color: #1F262A;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #1F262A;
+    border-color: #1F262A;
+}
+
+
+/*******************************/
 /********* Banner CSS **********/
 /*******************************/
 .banner {
@@ -1438,6 +1569,26 @@ a:focus {
     }
 }
 
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.fixed-cert-btn-r {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.fixed-cert-btn-l {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+}
 
 /*******************************/
 /******* Testimonial CSS *******/
