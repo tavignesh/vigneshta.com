@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        const newPath = window.location.pathname.replace(/^\/certifications/, '/certification');
+        window.location.replace(newPath);
+    </script>
+</head>
+<body>
+<p>Redirecting to <span id="path"></span>...</p>
+<script>
+    document.getElementById("path").textContent = window.location.pathname.replace(/^\/certifications/, '/certification');
+</script>
+</body>
+</html>
