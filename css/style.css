@@ -1569,6 +1569,249 @@ a:focus {
     }
 }
 
+
+/*******************************/
+/*********** Team2 CSS **********/
+/*******************************/
+.team2 {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    background: #1F262A;
+}
+
+.team2 .section-header h2 {
+    color: #ffffff;
+}
+
+.team2 .section-header p {
+    position: relative;
+    background: #1F262A;
+    color: #ffffff;
+    z-index: 1;
+    display: inline-block;
+    padding: 5px 15px; /* Add vertical padding */
+}
+
+.team2 .section-header p::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 50%;
+    left: -30px;
+    background: #ffffff;
+    z-index: 0;
+}
+
+.team2 .section-header p::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 3px;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.team2 .team-item {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
+}
+
+.team2 .team-img {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.team2 .team-img img {
+    position: relative;
+    width: 100%;
+    transition: .5s;
+}
+
+.team-item.no-img .team-text-full {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.team2 .team-text {
+    position: relative;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.team2 .team-text-full {
+    position: relative;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.team2 .team-text-full h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.team2 .team-text-full h3 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.team2 .team-text-full h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.team2 .team-text-full p {
+    margin-bottom: 20px;
+    transition: 1s;
+    color: #e2e2e2;
+}
+
+.team2 .team-text h2 {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.team2 .team-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.team2 .team-text p {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.team2 .team-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.team2 .team-meta {
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.team2 .team-meta p {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+}
+
+.team2 .team-meta i {
+    color: #eeeeee;
+    margin-right: 5px;
+}
+
+.team2 .team-meta p:last-child {
+    margin: 0;
+}
+
+.team2 .team-item::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 0;
+    transition: width 0.5s ease;
+}
+
+.team2 .team-item:hover::before {
+    width: 100%;
+}
+
+.team2 .team-text,
+.team2 .team-social {
+    position: relative;
+    z-index: 1;
+}
+
+.team2 .team-social a.btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.team2 .team-item:hover .team-img img {
+    transform: scale(1.2);
+}
+
+.team2 .team-item:hover .team-text-full h2,
+.team2 .team-item:hover .team-text-full h3,
+.team2 .team-item:hover .team-text-full h4,
+.team2 .team-item:hover .team-text-full p,
+.team2 .team-item:hover .team-meta i,
+.team2 .team-item:hover .team-text h2,
+.team2 .team-item:hover .team-text h4,
+.team2 .team-item:hover .team-text p {
+    color: #1F262A;
+}
+
+.team2 .team-item:hover .team-social a.btn {
+    background: #1F262A;
+}
+
+.team2 .team-item:hover .team-social a.btn:hover {
+    border-color: #1F262A;
+}
+
+@media(max-width: 575.98px) {
+    .team2 .team-text {
+        padding: 0 15px;
+    }
+
+    .team2 .team-text h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .team2 .team-text h4 {
+        margin-bottom: 5px;
+    }
+
+    .team2 .team-text p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
 .button-row {
     display: flex;
     justify-content: space-between;
