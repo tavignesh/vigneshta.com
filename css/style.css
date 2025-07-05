@@ -304,6 +304,32 @@ a:focus {
     transform: scale(1.1); /* Smooth zoom */
 }
 
+.hero .hero-image3 {
+    margin-left: 150px;
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 350px; /* Square shape */
+    overflow: hidden;
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+}
+
+.hero .hero-image3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.hero .hero-image3:hover img {
+    transform: scale(1.1);
+}
+
 
 .hero .hero-image img {
     width: 100%;

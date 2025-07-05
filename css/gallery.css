@@ -1,0 +1,70 @@
+.photo-gallery {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.selected-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.thumbnail-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.thumbnail-row {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    scrollbar-width: none;
+}
+.thumbnail-row::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail-row img {
+    height: 80px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    opacity: 0.6;
+}
+.thumbnail-row img:hover,
+.thumbnail-row img.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gallery-arrow {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.gallery-arrow.left {
+    left: -30px;
+}
+.gallery-arrow.right {
+    right: -30px;
+}
