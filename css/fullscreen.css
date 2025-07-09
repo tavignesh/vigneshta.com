@@ -1,0 +1,12 @@
+.full-screen-image {
+    height: calc(100vh + 0px);
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-screen-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
